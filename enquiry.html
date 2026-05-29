@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry | CD AfricaConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="enquiry.html">Enquiry</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <main>
+        <section class="intro-section">
+            <h1>Request a Quote</h1>
+            <p>
+                Tell us what your business needs and a CD Africa Connect consultant will review your request. Use the form below to provide your contact details, service requirements, and any notes about your current IT or network setup.
+            </p>
+        </section>
+
+        <section>
+            <form class="quote-form">
+                <h2>Business Details</h2>
+
+                <label for="business-name">Business Name</label>
+                <input type="text" id="business-name" name="business-name" placeholder="Your company name" required>
+
+                <label for="contact-person">Contact Person</label>
+                <input type="text" id="contact-person" name="contact-person" placeholder="Full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="011 000 0000" required>
+
+                <h2>Service Requirements</h2>
+
+                <label for="service-needed">Service Needed</label>
+                <input type="text" id="service-needed" name="service-needed" placeholder=", IT support, cybersecurity, cloud services">
+
+                <label for="business-size">Business Size</label>
+                <input type="text" id="business-size" name="business-size" placeholder="Example: 25 users or 40 devices">
+
+                <label for="timeline">Project Timeline</label>
+                <input type="text" id="timeline" name="timeline" placeholder="Example: Within 30 days">
+
+                <label for="location">Business Location</label>
+                <input type="text" id="location" name="location" placeholder="City or area">
+
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your current setup, number of devices, network issues, or cloud requirements."></textarea>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
