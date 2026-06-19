@@ -15,6 +15,7 @@ All notable changes to the CD Africa Connect website are documented in this file
 - Added a new `gallery.html` page with networking, fibre, Wi-Fi, cloud, and infrastructure images.
 - Added `js/gallery-lightbox.js` for the gallery lightbox with next/previous controls, overlay close, Escape close, arrow-key navigation, and focus restoration.
 - Added an interactive Google Map section on `contact.html`, including buttons to open the location and get directions in Google Maps.
+- Added an embedded YouTube video section on `services.html` explaining computer networks and the importance of reliable IT network design.
 
 ### Changed
 
@@ -25,6 +26,7 @@ All notable changes to the CD Africa Connect website are documented in this file
 - Improved Contact page layout with card-based contact details, clickable phone/email links, and map actions.
 - Updated Enquiry page form behavior so calculated quote details can be included in a pre-filled email.
 - Expanded responsive CSS for buttons, calculator controls, map layout, gallery grid, and lightbox behavior.
+- Expanded responsive CSS for embedded educational video content.
 - Updated `README.md` with SEO, navigation, quote calculator, gallery, map, and maintenance documentation.
 - Updated `sitemap.xml` to include the Gallery page.
 

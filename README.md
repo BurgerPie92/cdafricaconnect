@@ -42,6 +42,7 @@ All pages use the shared stylesheet at `css/styles.css`. The latest style update
 - Professional button rows for page-level calls to action and cross-page navigation.
 - Heading styles for card-based contact details.
 - Responsive gallery, lightbox, and interactive map styling.
+- Responsive embedded video styling for educational service content.
 - Responsive layout rules for desktop, tablet, mobile, and small mobile screens.
 
 ## Interactive Features
@@ -49,6 +50,7 @@ All pages use the shared stylesheet at `css/styles.css`. The latest style update
 - Each page includes working call-to-action buttons that guide visitors to services, contact details, or the enquiry page.
 - The gallery page includes a clickable image gallery with a lightbox, previous/next controls, close button, overlay close, and keyboard support for Escape and arrow keys.
 - The contact page includes an embedded interactive Google Map, plus buttons to open the location or directions in Google Maps.
+- The services page includes an embedded YouTube video explaining computer networks and why reliable IT network design matters.
 - The enquiry page includes a client-side quote calculator for service package, user/device count, business sites, support level, and timeline.
 - Quote estimates are calculated in South African Rand and are intended as planning estimates, not final pricing.
 - The enquiry form includes an email button that opens a pre-filled email to `Info@CDAfrica.tech` with the visitor's details and calculated estimate.
@@ -81,4 +83,5 @@ http://localhost:8000
 - Keep SEO metadata unique and aligned with each page whenever content changes.
 - Update `sitemap.xml` when adding, removing, or renaming public pages.
 - Add gallery images to `gallery.html` with `data-lightbox-src`, `data-lightbox-title`, and `data-lightbox-description` attributes.
+- Keep embedded video links relevant to networking, cybersecurity, or cloud infrastructure topics.
 - Review the base prices in `js/quote-calculator.js` if service pricing changes.
