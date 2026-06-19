@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry | CD AfricaConnect</title>
+    <title>Request a Quote | CD Africa Connect IT Services</title>
+    <meta name="description" content="Request a quote from CD Africa Connect for networking, managed IT support, cybersecurity, cloud migration, infrastructure, and disaster recovery services.">
+    <meta name="author" content="CD Africa Connect">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cdafrica.tech/enquiry.html">
+    <meta property="og:site_name" content="CD Africa Connect">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Request a Quote | CD Africa Connect IT Services">
+    <meta property="og:description" content="Tell CD Africa Connect about your business technology needs and request a service quote.">
+    <meta property="og:url" content="https://www.cdafrica.tech/enquiry.html">
+    <meta property="og:image" content="https://www.cdafrica.tech/images/fibreonpole.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Request a Quote | CD Africa Connect IT Services">
+    <meta name="twitter:description" content="Tell CD Africa Connect about your business technology needs and request a service quote.">
+    <meta name="twitter:image" content="https://www.cdafrica.tech/images/fibreonpole.jpg">
+    <meta name="theme-color" content="#007a6c">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
+    <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-        <a href="enquiry.html">Enquiry</a>
+        <a href="enquiry.html" aria-current="page">Enquiry</a>
     </nav>
 
     <main>
@@ -21,10 +37,79 @@
             <p>
                 Tell us what your business needs and a CD Africa Connect consultant will review your request. Use the form below to provide your contact details, service requirements, and any notes about your current IT or network setup.
             </p>
+            <div class="button-row" aria-label="Enquiry page actions">
+                <a class="button-link" href="services.html">Compare Services</a>
+                <a class="button-link secondary" href="gallery.html">View Gallery</a>
+                <a class="button-link secondary" href="contact.html">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="quote-calculator" data-quote-calculator aria-labelledby="quote-calculator-heading">
+            <div class="calculator-heading">
+                <div>
+                    <h2 id="quote-calculator-heading">Estimate Your Quote</h2>
+                    <p>
+                        Select a service package and business size to calculate an indicative project estimate.
+                    </p>
+                </div>
+                <div class="quote-total" aria-live="polite">
+                    <span>Estimated Total</span>
+                    <strong id="quote-total">R 0</strong>
+                </div>
+            </div>
+
+            <div class="calculator-grid">
+                <div>
+                    <label for="quote-service">Service Package</label>
+                    <select id="quote-service">
+                        <option value="network" data-base="6500" data-per-device="250">Network setup</option>
+                        <option value="managed-it" data-base="3500" data-per-device="180">Managed IT support</option>
+                        <option value="cybersecurity" data-base="5200" data-per-device="220">Cybersecurity assessment</option>
+                        <option value="cloud" data-base="7500" data-per-device="300">Cloud infrastructure</option>
+                        <option value="full-service" data-base="12500" data-per-device="420">Full IT modernisation</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quote-users">Users or Devices</label>
+                    <input type="number" id="quote-users" min="1" value="10">
+                </div>
+
+                <div>
+                    <label for="quote-sites">Business Sites</label>
+                    <input type="number" id="quote-sites" min="1" value="1">
+                </div>
+
+                <div>
+                    <label for="quote-support">Support Level</label>
+                    <select id="quote-support">
+                        <option value="0.85">Essential</option>
+                        <option value="1" selected>Standard</option>
+                        <option value="1.25">Premium</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quote-timeline">Timeline</label>
+                    <select id="quote-timeline">
+                        <option value="1.25">Urgent, within 7 days</option>
+                        <option value="1.1">Within 30 days</option>
+                        <option value="1" selected>Flexible, 60+ days</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="button-link calculator-button" type="button" id="calculate-quote">Calculate Quote</button>
+            <p class="quote-breakdown" id="quote-breakdown">
+                Your estimate will appear here after calculation.
+            </p>
+            <p class="quote-note">
+                Estimates are a planning guide only. Final pricing depends on site conditions, hardware, licensing, and project scope.
+            </p>
         </section>
 
         <section>
-            <form class="quote-form">
+            <form class="quote-form" id="quote-form" action="mailto:Info@CDAfrica.tech" method="post" enctype="text/plain">
                 <h2>Business Details</h2>
 
                 <label for="business-name">Business Name</label>
@@ -42,7 +127,7 @@
                 <h2>Service Requirements</h2>
 
                 <label for="service-needed">Service Needed</label>
-                <input type="text" id="service-needed" name="service-needed" placeholder=", IT support, cybersecurity, cloud services">
+                <input type="text" id="service-needed" name="service-needed" placeholder="Example: IT support, cybersecurity, cloud services">
 
                 <label for="business-size">Business Size</label>
                 <input type="text" id="business-size" name="business-size" placeholder="Example: 25 users or 40 devices">
@@ -55,8 +140,16 @@
 
                 <label for="message">Additional Information</label>
                 <textarea id="message" name="message" rows="5" placeholder="Tell us about your current setup, number of devices, network issues, or cloud requirements."></textarea>
+
+                <input type="hidden" id="estimated-quote" name="estimated-quote" value="">
+
+                <div class="form-actions">
+                    <button class="button-link" type="submit">Email Enquiry</button>
+                    <a class="button-link secondary" href="tel:+27119553570">Call Us</a>
+                </div>
             </form>
         </section>
     </main>
+    <script src="js/quote-calculator.js" defer></script>
 </body>
 </html>

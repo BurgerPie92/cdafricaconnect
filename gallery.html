@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Gallery | CD Africa Connect Projects &amp; Services</title>
+    <meta name="description" content="View the CD Africa Connect gallery featuring business networking, fibre connectivity, Wi-Fi, cloud infrastructure, and IT service visuals.">
+    <meta name="author" content="CD Africa Connect">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cdafrica.tech/gallery.html">
+    <meta property="og:site_name" content="CD Africa Connect">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Technology Gallery | CD Africa Connect Projects &amp; Services">
+    <meta property="og:description" content="Explore networking, fibre, Wi-Fi, cloud, and IT service visuals from CD Africa Connect.">
+    <meta property="og:url" content="https://www.cdafrica.tech/gallery.html">
+    <meta property="og:image" content="https://www.cdafrica.tech/images/networkcabinet.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Technology Gallery | CD Africa Connect Projects &amp; Services">
+    <meta name="twitter:description" content="Explore networking, fibre, Wi-Fi, cloud, and IT service visuals from CD Africa Connect.">
+    <meta name="twitter:image" content="https://www.cdafrica.tech/images/networkcabinet.jpg">
+    <meta name="theme-color" content="#007a6c">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <main>
+        <section class="intro-section">
+            <h1>Technology Gallery</h1>
+            <p>
+                Explore visuals connected to CD Africa Connect's networking, fibre, wireless, cloud, and infrastructure services. Select any image to open it in the lightbox.
+            </p>
+            <div class="button-row" aria-label="Gallery page actions">
+                <a class="button-link" href="enquiry.html">Request a Quote</a>
+                <a class="button-link secondary" href="contact.html">Find Us</a>
+            </div>
+        </section>
+
+        <section class="gallery-grid" aria-label="Technology service gallery">
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/networkcabinet.jpg" data-lightbox-title="Network Cabinet" data-lightbox-description="Structured network equipment and connected cabling for stable business infrastructure.">
+                    <img src="images/networkcabinet.jpg" alt="Network cabinet with connected cables">
+                </button>
+                <figcaption>Network Cabinet</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/Fibre.jpg" data-lightbox-title="Fibre Connectivity" data-lightbox-description="Fibre infrastructure that supports fast and reliable business connectivity.">
+                    <img src="images/Fibre.jpg" alt="Fibre network connection equipment">
+                </button>
+                <figcaption>Fibre Connectivity</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/fibreonpole.jpg" data-lightbox-title="Fibre Deployment" data-lightbox-description="Outdoor fibre deployment supporting high-speed business network access.">
+                    <img src="images/fibreonpole.jpg" alt="Fibre cable installation on a pole">
+                </button>
+                <figcaption>Fibre Deployment</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/wifi.jpg" data-lightbox-title="Wireless Networking" data-lightbox-description="Wireless infrastructure for dependable office and business coverage.">
+                    <img src="images/wifi.jpg" alt="Wireless networking equipment">
+                </button>
+                <figcaption>Wireless Networking</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/microsoftazure.jpg" data-lightbox-title="Cloud Infrastructure" data-lightbox-description="Cloud services and infrastructure planning for scalable business systems.">
+                    <img src="images/microsoftazure.jpg" alt="Cloud infrastructure service graphic">
+                </button>
+                <figcaption>Cloud Infrastructure</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <button type="button" data-lightbox-src="images/pigtails.jpg" data-lightbox-title="Fibre Components" data-lightbox-description="Fibre components used in structured connectivity and network installations.">
+                    <img src="images/pigtails.jpg" alt="Fibre optic pigtail connectors">
+                </button>
+                <figcaption>Fibre Components</figcaption>
+            </figure>
+        </section>
+
+        <section class="highlight-section">
+            <h2>Planning a Similar Project?</h2>
+            <p>
+                Use the quote calculator to estimate a service package, then send your details for a more accurate consultation.
+            </p>
+            <div class="button-row" aria-label="Gallery call to action">
+                <a class="button-link" href="enquiry.html">Calculate Quote</a>
+                <a class="button-link secondary" href="services.html">View Services</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+        <div class="lightbox-panel">
+            <button class="lightbox-close" type="button" aria-label="Close gallery image">&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous gallery image">&#8249;</button>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next gallery image">&#8250;</button>
+            <div class="lightbox-caption">
+                <h2 id="lightbox-title">Gallery image</h2>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/gallery-lightbox.js" defer></script>
+</body>
+</html>
